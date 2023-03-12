@@ -5,7 +5,8 @@ const intern = require('./lib/intern');
 const manager = require('./lib/manager');
 
 const team = [];
-//Options
+
+//starter optoins, what would the user like to do.
 function options() {
     inquirer.prompt([
         {
@@ -54,6 +55,7 @@ function addIntern() {
         }
     ])
 }
+//add managers
 function getManager() {
     console.log(" ");
     inquirer 
@@ -66,6 +68,7 @@ function getManager() {
             }
         ])
 }
+//add new people to the team
 function addTeam(){
     inquirer
         .prompt([{
